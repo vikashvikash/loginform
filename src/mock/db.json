@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "firstname": "vikash yadav",
+      "lastname": "dasari",
+      "username": "vikash",
+      "password": "vikash"
+    },
+    {
+      "firstname": "Nagaraju",
+      "lastname": "Yadav",
+      "username": "Nagaraju",
+      "password": "Nagaraju",
+      "id": 1
+    },
+    {
+      "firstname": "Nagaraju",
+      "lastname": "Yadav",
+      "username": "Nagaraju",
+      "password": "Nagaraju",
+      "id": 2
+    },
+    {
+      "firstname": "Venky",
+      "lastname": "N",
+      "username": "Venky",
+      "password": "Venky",
+      "id": 3
+    }
+  ]
+}
