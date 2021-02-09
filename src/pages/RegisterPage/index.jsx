@@ -51,20 +51,18 @@ const gotoHome=()=>{
     history.push('/');
 }
     return(<Title>
-        <form onSubmit={userEntry}>
-            <label htmlFor="firstname">First Name</label>
-            <Input id="firstname" placeholder="Firstname" type="text" name="firstname" required></Input>
-            <label htmlFor="lastname">Last Name</label>
-            <Input id="lasttname" placeholder="Lasttname" type="text" name="lastname" required></Input>
-            <label htmlFor="username">User Name</label>
-            <Input id="usertname" placeholder="Username" type="text" name="username" required></Input>
-            <label htmlFor="password">Pass Word</label>
-            <Input id="password" placeholder="password" type="password" name="password" autocomplete="on" required></Input>
-            <Button type="submit" className="Submit">Submit</Button>
-            <Button type="button" className="Home" onClick={gotoHome}>Home</Button>
-            
-
-        </form>
-        </Title>)
+            <form onSubmit={userEntry}>
+               <label htmlFor="firstname">First Name</label>
+               <Input id="firstname" placeholder="Firstname" type="text" name="firstname" required></Input>
+               <label htmlFor="lastname">Last Name</label>
+               <Input id="lasttname" placeholder="Lasttname" type="text" name="lastname" required></Input>
+               <label htmlFor="username">User Name</label>
+               <Input id="usertname" placeholder="Username" type="text" name="username" required></Input>
+               <label htmlFor="password">Pass Word</label>
+               <Input id="password" placeholder="password" type="password" name="password" autocomplete="on" required></Input>
+               <Button type="submit" className="Submit">Submit</Button>
+               <Button type="button" className="Home" onClick={gotoHome}>Home</Button>
+            </form>
+            </Title>)
 }
 export default RegisterPage;

@@ -1,6 +1,6 @@
-import React, { Fragment, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import {useHistory } from 'react-router-dom';
-import{useSelector, useDispatch,connect} from 'react-redux';
+import{useSelector, useDispatch} from 'react-redux';
 import{userLogout} from '../../redux/actions/actionCreators';
 import styled from 'styled-components';
 import{Button} from '../../components/Button';
@@ -16,7 +16,7 @@ const Title = styled.h1`
 `;
 
 
- const LoginPage=()=>{
+const LoginPage=()=>{
     const history=useHistory();
     const dispatch=useDispatch();
     var loginStatus=useSelector(state=>state.isLogin);
@@ -31,9 +31,10 @@ const Title = styled.h1`
         }
     },[loginStatus]);
 
-    return(<Fragment><Title>
-    <h2>WellCome to Login Page</h2>
-    <Button type="button" onClick={Logout}>Logout</Button>
-   </Title> </Fragment>);
+    return(
+           <Title>
+                <h2>WellCome to Login Page</h2>
+                <Button type="button" onClick={Logout}>Logout</Button>
+          </Title>);
 }
 export default LoginPage;

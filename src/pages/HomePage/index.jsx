@@ -2,7 +2,7 @@ import React from 'react';
 import {useHistory} from 'react-router-dom';
 import styled from 'styled-components';
 import {userLogin} from '../../redux/actions/actionCreators';
-import {useDispatch,useSelector,connect}from 'react-redux';
+import {useDispatch,useSelector}from 'react-redux';
 import{useEffect, useState} from 'react';
 import{ Button} from '../../components/Button';
 import Input from '../../components/Input';
